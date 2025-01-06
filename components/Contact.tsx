@@ -99,7 +99,7 @@ const Contact: FC = () => {
                 </p>
             </div>
             <div className="lg:flex lg:flex-row flex-col gap-[4.1%]">
-                <div className="lg:w-[40.5%] w-[100%] rounded-[10px] bg-[#261F18] relative">
+                <div className="lg:w-[40.5%] w-[100%] rounded-[10px] bg-baseText relative">
                     <ContactsLink />
                     <div className="absolute flex lg:top-[232px] top-[69px] lg:left-[233px] left-[623px] lg:w-[232px] lg:h-[331px] w-[293px] h-[418px]">
                         <Image src="/images/sportman.svg" alt="Sport" fill />
@@ -283,7 +283,7 @@ const Contact: FC = () => {
                         <div className="w-full flex lg:justify-start justify-center contacts-button">
                             <button
                                 type="submit"
-                                className="contacts-btn text-sm tracking-tighter font-semibold cursor-style text-white bg-[#261F18] hover:bg-[#45392C] active:bg-[#261F18] active:shadow-custom transition-colors duration-300 py-[14px] px-[24px] rounded-[100px] leading-7"
+                                className="contacts-btn text-sm tracking-tighter font-semibold cursor-style text-white bg-baseText hover:bg-[#45392C] active:bg-baseText active:shadow-custom transition-colors duration-300 py-[14px] px-[24px] rounded-[100px] leading-7"
                             >
                                 Send us a message
                             </button>

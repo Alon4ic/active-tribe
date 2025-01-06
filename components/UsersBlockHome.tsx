@@ -19,31 +19,31 @@ export default function UsersBlockHome() {
                 >
                     <Link href="/provid">For Users</Link>
                 </Button>
-                <div className="hidden lg:block w-[169px] h-[60px] bg-white mt-5 mb-5">
+                <div className="w-[169px] h-[60px] p-[8.5px] bg-white mt-5 mb-5 rounded">
                     <Image
                         src="/images/Logo_GS.svg"
                         alt="Logo Home"
-                        width={169}
-                        height={60}
-                        className="w-[169px] h-[60px]"
+                        width={152}
+                        height={43}
+                        className="w-[152px] h-[43px]"
                     />
                 </div>
-                <h1 className="font-extrabold uppercase text-[#261F18] sm:text-[40px] text-[30px] leading-[55px]">
+                <h1 className="font-extrabold uppercase text-baseText sm:text-[40px] text-[30px] leading-[55px]">
                     Unlock your fitness potential now with{' '}
-                    <span className="md:uppercase normal-case md:text-[#261F18] sm:text-[#88816E] text-[#261F18]">
+                    <span className="md:uppercase normal-case md:text-baseText sm:text-[#88816E] text-baseText">
                         GymStation
                     </span>
                 </h1>
-                <p className="text-[#261F18] text-xl mt-5">
+                <p className="text-baseText text-xl mt-5">
                     Introducing GymStation, the innovative fitness equipment
                     rental service in your favourite outdoor location.
                 </p>
-                <p className="text-[#261F18] text-xl mb-[39px] mt-2">
+                <p className="text-baseText text-xl mb-[39px] mt-2">
                     Join the <span className="font-bold">GymStation</span>{' '}
                     community!
                 </p>
                 <Link
-                    className="bg-[#261F18] text-white w-[199px] flex justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] hover:bg-[#45392C] active:shadow-custom transition-colors duration-300"
+                    className="bg-baseText text-white w-[199px] flex justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] hover:bg-[#45392C] active:shadow-custom transition-colors duration-300"
                     href="/"
                 >
                     Join the community

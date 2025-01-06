@@ -9,7 +9,7 @@ export default function WorksList() {
                         1
                     </div>
                     <div className="block max-w-[calc(100%-55px)]">
-                        <h3 className="text-[#261F18] font-bold text-lg pb-[10px]">
+                        <h3 className="text-baseText font-bold text-lg pb-[10px]">
                             Register
                         </h3>
                         <span className="text-sm text-[#88816E] leading-[26px]">
@@ -26,7 +26,7 @@ export default function WorksList() {
                         2
                     </div>
                     <div className="block max-w-[calc(100%-55px)]">
-                        <h3 className="text-[#261F18] font-bold text-lg pb-[10px]">
+                        <h3 className="text-baseText font-bold text-lg pb-[10px]">
                             Locate and book
                         </h3>
                         <span className="text-sm text-[#88816E] leading-[26px]">
@@ -43,7 +43,7 @@ export default function WorksList() {
                         3
                     </div>
                     <div className="block max-w-[calc(100%-55px)]">
-                        <h3 className="text-[#261F18] font-bold text-lg pb-[10px]">
+                        <h3 className="text-baseText font-bold text-lg pb-[10px]">
                             Unlock and Train
                         </h3>
                         <span className="text-sm text-[#88816E] leading-[26px]">
@@ -59,7 +59,7 @@ export default function WorksList() {
                         4
                     </div>
                     <div className="block max-w-[calc(100%-55px)]">
-                        <h3 className="text-[#261F18] font-bold text-lg pb-[10px]">
+                        <h3 className="text-baseText font-bold text-lg pb-[10px]">
                             Build your workout
                         </h3>
                         <span className="text-sm text-[#88816E] leading-[26px]">
@@ -74,7 +74,7 @@ export default function WorksList() {
                         5
                     </div>
                     <div className="block max-w-[calc(100%-55px)]">
-                        <h3 className="text-[#261F18] font-bold text-lg pb-[10px]">
+                        <h3 className="text-baseText font-bold text-lg pb-[10px]">
                             Lock
                         </h3>
                         <span className="text-sm text-[#88816E] leading-[26px]">

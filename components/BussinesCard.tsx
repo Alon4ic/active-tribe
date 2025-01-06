@@ -7,7 +7,7 @@ export default function BussinesCard() {
         <section className="relative max-w-[1215px] lg:mx-auto mx-5 lg:pt-[100px] pt-[50px] lg:pb-[100px] pb-[50px]">
             <div className="lg:flex flex-col justify-center">
                 <div className="lg:flex lg:text-left phone:text-center text-left justify-between">
-                    <h2 className="md:text-[50px] sm:text-[40px] text-[30px] lg:pb-0 md:pb-10 sm:pb-[30px] pb-[25px] font-bold sm:leading-[65px] leading-[45px] uppercase text-[#261F18] lg:min-w-[291px] min-w-full">
+                    <h2 className="md:text-[50px] sm:text-[40px] text-[30px] lg:pb-0 md:pb-10 sm:pb-[30px] pb-[25px] font-bold sm:leading-[65px] leading-[45px] uppercase text-baseText lg:min-w-[291px] min-w-full">
                         <span className="text-[#88816E]">About</span> our
                         company
                     </h2>

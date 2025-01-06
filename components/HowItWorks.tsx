@@ -8,12 +8,12 @@ export default function HowItWorks() {
             {/* Заголовок и описание */}
             <div className="block lg:flex lg:justify-between mb-[60px]">
                 <div className="lg:w-[50%] w-full">
-                    <h2 className="text-[#261F18] uppercase md:text-[50px] phone:text-[40px] text-[30px] font-bold">
+                    <h2 className="text-baseText uppercase md:text-[50px] phone:text-[40px] text-[30px] font-bold">
                         <span className="text-[#88816E]">How</span> it works
                     </h2>
                 </div>
                 <div className="lg:w-[50%] w-full lg:pt-[0px] pt-[20px] lg:pb-[0px]">
-                    <p className="text-lg text-[#261F18] leading-7">
+                    <p className="text-lg text-baseText leading-7">
                         At Active Tribe we make renting and using fitness
                         equipment a seamless and hassle-free experience. Here is
                         a step-by-step breakdown of how our service works.

@@ -21,7 +21,7 @@ export default function Structure() {
                 />
                 <div className="w-full md:h-[25px] h-[45px] bg-white border-t-[0.5px] md:border-red-500 border-white" />
             </div>
-            <div className="bg-[#261F18] lg:pt-[100px] pt-[60px] lg:pb-[100px] pb-[21px] relative overflow-hidden object-contain">
+            <div className="bg-baseText lg:pt-[100px] pt-[60px] lg:pb-[100px] pb-[21px] relative overflow-hidden object-contain">
                 <div className="max-w-[1214px] lg:mx-auto mx-5">
                     <div className="flex justify-between">
                         <div className="lg:flex hidden relative lg:w-[48.7%] w-full h-[630px]">

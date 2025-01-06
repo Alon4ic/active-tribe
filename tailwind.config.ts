@@ -17,10 +17,19 @@ export default {
             boxShadow: {
                 custom: '0 0 0 2px rgba(69, 57, 44, 0.25)',
                 btnLight: '0 0 0 2px rgba(142, 131, 110, 0.3)',
+                provid: '0 4px 10px 0 rgba(0, 0, 0, 0.25)',
             },
             colors: {
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
+                baseText: '#261F18',
+                darkText: '#0D0D0D',
+                darkGold: '#88816E',
+                darkGray: '#333333',
+                lightWhite: '#FAFAFA',
+                lightGray: '#B6B4BD',
+                metallic: '#EEEAE2',
+                middleText: '#2F2D3B',
                 card: {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
@@ -68,6 +77,12 @@ export default {
             backgroundImage: {
                 'provid-block': "url('/images/provid.jpg')",
                 'users-block': "url('/images/users.jpg')",
+            },
+            backgroundSize: {
+                fit: 'contain',
+            },
+            backgroundPosition: {
+                'custom-center': 'center',
             },
             screens: {
                 phone: '393px',

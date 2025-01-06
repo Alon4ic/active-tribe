@@ -74,7 +74,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             <Link
                                 href={item.href}
                                 key={item.id}
-                                className="text-[40px] text-[#261F18] leading-[58px] font-bold "
+                                className="text-[40px] text-baseText leading-[58px] font-bold "
                                 onClick={onClose} // Закрытие меню при клике на элемент
                             >
                                 {item.name}
@@ -92,9 +92,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         className="absolute top-[68px] md:left-[629px] sm:left-[520px] phone:left-[487px] left-[216px]"
                     />
                     <div className="md:flex hidden flex-col justify-center items-start">
-                        
                         <div className="">
-                            <p className="w-[217px] text-lg text-[#261F18] leading-7 font-normal pb-[30px]">
+                            <p className="w-[217px] text-lg text-baseText leading-7 font-normal pb-[30px]">
                                 Join the Active Tribe for a healthier and
                                 happier life.
                             </p>
@@ -107,7 +106,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                 />
                                 <a
                                     href="mailto:admin@active-tribe.com"
-                                    className="text-base leading-6 font-normal text-[#261F18]"
+                                    className="text-base leading-6 font-normal text-baseText"
                                 >
                                     admin@active-tribe.com
                                 </a>
@@ -121,7 +120,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                 />
                                 <a
                                     href="tel:971585113234"
-                                    className="text-base leading-6 font-normal text-[#261F18] cursor-pointer"
+                                    className="text-base leading-6 font-normal text-baseText cursor-pointer"
                                 >
                                     +971 58 511 3234
                                 </a>
@@ -133,7 +132,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     <div className="mb-[25px]">
                         <Link
                             href="/privacy-policy"
-                            className="uppercase font-manrope text-[#261F18] text-[12.5px] leading-[17px] tracking-[10%]"
+                            className="uppercase font-manrope text-baseText text-[12.5px] leading-[17px] tracking-[10%]"
                             onClick={onClose}
                         >
                             Privacy Policy{' '}
@@ -147,7 +146,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                 aria-hidden="true"
                             ></span>
                         </Link>
-                        <p className="uppercase font-manrope text-[#261F18] text-[12.5px] leading-[17px] tracking-[10%] pt-3">
+                        <p className="uppercase font-manrope text-baseText text-[12.5px] leading-[17px] tracking-[10%] pt-3">
                             Copyright 2025, Active Tribe
                         </p>
                     </div>

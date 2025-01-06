@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 
 export const navbarLinks = [
-    { id: 0, name: 'For Providers', href: '/provid' },
+    { id: 0, name: 'For Providers', href: '/providers' },
     { id: 1, name: 'For Users', href: '/users' },
     { id: 2, name: 'About Us', href: '#about' },
     { id: 3, name: 'How it Works', href: '#works' },
@@ -31,7 +31,9 @@ export default function NavbarLinks({
                 isVertical
                     ? 'flex-col space-y-2'
                     : 'justify-center items-center  text-base',
-                isFooter ? 'desctop:space-x-10 space-x-[auto] text-sm justify-between text-[#BDBDBD]' : ''
+                isFooter
+                    ? 'desctop:space-x-10 space-x-5 text-sm justify-between text-[#BDBDBD]'
+                    : ''
             )}
         >
             {navbarLinks.map((item) => (

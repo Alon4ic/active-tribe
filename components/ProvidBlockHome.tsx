@@ -19,28 +19,28 @@ export default function ProvidBlockHome() {
                 >
                     <Link href="/provid">For Provider</Link>
                 </Button>
-                <div className="w-[169px] h-[60px] bg-white mt-5 mb-5">
+                <div className="w-[169px] h-[60px] p-[8.5px] bg-white mt-5 mb-5 rounded">
                     <Image
                         src="/images/Logo_GS.svg"
                         alt="Logo Home"
-                        width={169}
-                        height={60}
-                        className="w-[169px] h-[60px]"
+                        width={152}
+                        height={43}
+                        className="w-[152px] h-[43px]"
                     />
                 </div>
-                <h1 className="lg:block hidden font-extrabold uppercase text-[#261F18] text-[40px] leading-[55px]">
+                <h1 className="lg:block hidden font-extrabold uppercase text-baseText text-[40px] leading-[55px]">
                     Unlock your fitness potential now with{' '}
                     <span className="md:uppercase normal-case md:text-white text-[#88816E]">
                         GymStation
                     </span>
                 </h1>
-                <h1 className="lg:hidden block font-extrabold uppercase text-[#261F18] sm:text-[40px] text-[30px] leading-[55px]">
+                <h1 className="lg:hidden block font-extrabold uppercase text-baseText sm:text-[40px] text-[30px] leading-[55px]">
                     promote sport/fitness Experience with{' '}
-                    <span className="md:uppercase normal-case sm:text-[#88816E] text-[#261F18]">
+                    <span className="md:uppercase normal-case sm:text-[#88816E] text-baseText">
                         GymStation
                     </span>
                 </h1>
-                <p className="text-[#261F18] text-xl mt-5 mb-[39px]">
+                <p className="text-baseText text-xl mt-5 mb-[39px]">
                     Ready to revolutionize your community&#39;s health and
                     happiness? <span className="font-bold">GymStation</span> is
                     your answer. Let&#39;s create a healthier, more active space
@@ -49,7 +49,7 @@ export default function ProvidBlockHome() {
                     Join the movement towards accessible outdoor fitness.
                 </p>
                 <Link
-                    className="bg-[#261F18] text-white w-[199px] lg:flex hidden justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:bg-[#261F18] active:shadow-custom transition-colors duration-300"
+                    className="bg-baseText text-white w-[199px] lg:flex hidden justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:bg-baseText active:shadow-custom transition-colors duration-300"
                     href="/"
                 >
                     Find Out More
@@ -62,7 +62,7 @@ export default function ProvidBlockHome() {
                     />
                 </Link>
                 <Link
-                    className="bg-[#261F18] lg:hidden flex text-white w-[199px] justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:shadow-custom"
+                    className="bg-baseText lg:hidden flex text-white w-[199px] justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:shadow-custom"
                     href="/"
                 >
                     Become a partner
