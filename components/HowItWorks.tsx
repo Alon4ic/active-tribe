@@ -20,9 +20,9 @@ export default function HowItWorks() {
                     </p>
                 </div>
             </div>
-            {/* Контент */}
+
             <div className="lg:flex block lg:pt-5 pt-[0px]">
-                {/* Список шагов */}
+
                 <div className="lg:w-[50%] w-full lg:pr-[6.5%] pr-[0px]">
                     <WorksList />
                 </div>

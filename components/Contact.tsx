@@ -13,7 +13,7 @@ import { getCaptchaToken } from '@/utils/captcha';
 import ContactsLink from './ContactsLink';
 import Image from 'next/image';
 import { Checkbox } from './ui/checkbox';
-const REQUIRED_PAGES = ['/terms', '/settings', '/privacy-policy'];
+const REQUIRED_PAGES = ['/terms-of-service', '/privacy-policy'];
 
 const Contact: FC = () => {
     const {
@@ -47,13 +47,25 @@ const Contact: FC = () => {
             recaptchaBadge.style.bottom = '10px'; // Регулируйте позицию
             recaptchaBadge.style.right = '10px';
             formContainer.appendChild(recaptchaBadge); // Переместите иконку внутрь формы
+            const isMobile = window.innerWidth <= 1024; // Проверяем ширину экрана
+            recaptchaBadge.style.width = isMobile ? '190px' : '256px';
+            recaptchaBadge.style.height = isMobile ? '45px' : '60px';
+
+            formContainer.appendChild(recaptchaBadge); // Переместите иконку внутрь формы
+
+            // Обновляйте при изменении размера окна
+            window.addEventListener('resize', () => {
+                const isMobile = window.innerWidth <= 1024;
+                recaptchaBadge.style.width = isMobile ? '190px' : '256px';
+                recaptchaBadge.style.height = isMobile ? '45px' : '60px';
+            });
         }
     }, []);
 
     const onSubmit = async (data: FormData) => {
         if (!canAgree) {
             toast.error(
-                'Please visit Terms, Settings, and Privacy Policy pages before proceeding.'
+                'Please visit Terms of Service and Privacy Policy pages before proceeding.'
             );
             return;
         }
@@ -99,9 +111,9 @@ const Contact: FC = () => {
                 </p>
             </div>
             <div className="lg:flex lg:flex-row flex-col gap-[4.1%]">
-                <div className="lg:w-[40.5%] w-[100%] rounded-[10px] bg-baseText relative">
+                <div className="lg:w-[40.5%] w-[100%] rounded-[10px] bg-baseText relative overflow-hidden">
                     <ContactsLink />
-                    <div className="absolute flex lg:top-[232px] top-[69px] lg:left-[233px] left-[623px] lg:w-[232px] lg:h-[331px] w-[293px] h-[418px]">
+                    <div className="absolute flex lg:top-[232px] top-[69px] lg:left-[233px] md:left-[623px] phone:left-[421px] left-[171px] lg:w-[232px] lg:h-[331px] w-[293px] h-[418px]">
                         <Image src="/images/sportman.svg" alt="Sport" fill />
                     </div>
                 </div>
@@ -245,9 +257,9 @@ const Contact: FC = () => {
                                 {...register('message', {
                                     required: 'Message is required',
                                     minLength: {
-                                        value: 20,
+                                        value: 15,
                                         message:
-                                            'Message must be at least 20 characters long',
+                                            'Message must be at least 15 characters long',
                                     },
                                 })}
                             />
@@ -266,14 +278,13 @@ const Contact: FC = () => {
                             />
                             <Label htmlFor="agree ">
                                 I agree to the{' '}
-                                <a href="/terms" className="underline">
-                                    Terms
-                                </a>
-                                ,{' '}
-                                <a href="/settings" className="underline">
-                                    Settings
-                                </a>
-                                , and{' '}
+                                <a
+                                    href="/terms-of-service"
+                                    className="underline"
+                                >
+                                    Terms of Service
+                                </a>{' '}
+                                and{' '}
                                 <a href="/privacy-policy" className="underline">
                                     Privacy Policy
                                 </a>

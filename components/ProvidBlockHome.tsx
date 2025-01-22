@@ -5,19 +5,14 @@ import Image from 'next/image';
 
 export default function ProvidBlockHome() {
     return (
-        <section
-            // style={{
-            //     backgroundImage: "url('/images/provid-2.jpg')",
-            // }}
-            className="flex justify-end lg:w-[50%] w-[100%] md:bg-[url('/images/provid-2.jpg')] bg-[url('/images/provid-mobile.jpg')] bg-cover bg-right bg-no-repeat"
-        >
+        <section className="flex justify-end lg:w-[50%] w-[100%] md:bg-[url('/images/provid-2.jpg')] bg-[url('/images/provid-mobile.jpg')] bg-cover bg-right bg-no-repeat">
             <div className="flex flex-col lg:max-w-[512px] lg:ml-5 lg:mr-[9%] lg:mt-[98px] md:mt-[73px] mt-[82px] mb-[49px] mx-5 md:max-w-[609px] ">
                 <Button
                     asChild
                     style={{ width: '175px', height: '40px' }}
                     className="hidden lg:flex items-center justify-center border border-transparent hover:border-[#E8E3D1] bg-[#E8E3D1] hover:bg-[#f2f1ee] rounded-3xl text-[#0D0D0D] text-lg uppercase font-gilroy font-bold"
                 >
-                    <Link href="/provid">For Provider</Link>
+                    <Link href="/providers">For Provider</Link>
                 </Button>
                 <div className="w-[169px] h-[60px] p-[8.5px] bg-white mt-5 mb-5 rounded">
                     <Image
@@ -50,7 +45,7 @@ export default function ProvidBlockHome() {
                 </p>
                 <Link
                     className="bg-baseText text-white w-[199px] lg:flex hidden justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:bg-baseText active:shadow-custom transition-colors duration-300"
-                    href="/"
+                    href="/#contact"
                 >
                     Find Out More
                     <Image
@@ -63,7 +58,7 @@ export default function ProvidBlockHome() {
                 </Link>
                 <Link
                     className="bg-baseText lg:hidden flex text-white w-[199px] justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:shadow-custom"
-                    href="/"
+                    href="/#contact"
                 >
                     Become a partner
                     <Image

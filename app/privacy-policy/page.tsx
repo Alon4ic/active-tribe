@@ -1,6 +1,8 @@
 'use client';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import PolicyTop from '../../components/PolicyTop';
+import PolicyContent from '../../components/PolicyContent';
 
 export default function PrivacyPolicy() {
     const pathname = usePathname();
@@ -16,8 +18,13 @@ export default function PrivacyPolicy() {
     }, [pathname]);
 
     return (
-        <div>
-            <h1>Hello from {pathname}</h1>
-        </div>
+        <>
+                    <div className="lg:bg-[url('/images/policy/policy-lg.jpg')] md:bg-[url('/images/policy/policy-md.jpg')] phone:bg-[url('/images/policy/policy-phone.jpg')] bg-[url('/images/policy/policy.jpg')] bg-bottom bg-no-repeat w-full">
+                        <PolicyTop />
+                    </div>
+                    <div>
+                        <PolicyContent />
+                    </div>
+                </>
     );
 }

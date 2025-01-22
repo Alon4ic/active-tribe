@@ -56,32 +56,33 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     </Link>
                     <Button
                         onClick={onClose}
-                        className="text-black bg-transparent hover:bg-[#88816E] text-sm w-[46px] h-[46px] p-2"
+                        className="text-black bg-transparent hover:bg-[#dedacf] text-sm p-2"
                     >
                         <Image
-                            src="/images/btn-burger.svg"
+                            src="/images/cross.svg"
                             alt="Button"
-                            width={46}
-                            height={46}
+                            width={23}
+                            height={23}
                         />
                     </Button>
                 </div>
-
-                {/* Ссылки меню */}
-                <div className="relative flex pt-[34px] gap-[205px]">
-                    <div className="flex md:max-w-[359px] w-[100%] flex-col md:justify-start justify-center md:items-start items-center gap-[15px] md:pl-[30px] pl-0">
+                <div className="relative flex phone:pt-[34px] pt-[70px] gap-[205px]">
+                    <div className="flex md:max-w-[359px] w-[100%] flex-col md:justify-start justify-center md:items-start items-center phone:gap-[15px] gap-0 md:pl-[30px] pl-0">
                         {navbarLinks.map((item) => (
                             <Link
                                 href={item.href}
                                 key={item.id}
-                                className="text-[40px] text-baseText leading-[58px] font-bold "
-                                onClick={onClose} // Закрытие меню при клике на элемент
+                                className="phone:text-[40px] text-[34px] text-baseText leading-[58px] font-bold "
+                                onClick={onClose}
                             >
                                 {item.name}
                             </Link>
                         ))}
-                        <div className="flex mt-4">
-                            <ButtonNav />
+                        <div className="flex mt-4" onClick={onClose}>
+                            <ButtonNav
+                                href="/#contact"
+                                text="Join Active Tribe"
+                            />
                         </div>
                     </div>
                     <Image
@@ -92,7 +93,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         className="absolute top-[68px] md:left-[629px] sm:left-[520px] phone:left-[487px] left-[216px]"
                     />
                     <div className="md:flex hidden flex-col justify-center items-start">
-                        <div className="">
+                        <div>
                             <p className="w-[217px] text-lg text-baseText leading-7 font-normal pb-[30px]">
                                 Join the Active Tribe for a healthier and
                                 happier life.
@@ -128,7 +129,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         </div>
                     </div>
                 </div>
-                <div className="pt-[49px] pb-[25px] flex justify-center">
+                <div className="phone:pt-[49px] pt-[54px] pb-[25px] flex justify-center">
                     <div className="mb-[25px]">
                         <Link
                             href="/privacy-policy"
@@ -167,7 +168,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     <a
                         className="px-[7px] py-2 rounded-full bg-[#88816e] flex justify-center items-center
 									  "
-                        href="https://www.linkedin.com/company/active-tribe-me/"
+                        href="https://www.instagram.com/youractivetribe?igsh=NTBkbzc1YWc5bDQ1"
                     >
                         <Image
                             src="../images/contactUs/instagram.svg"

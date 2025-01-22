@@ -17,8 +17,8 @@ export default function Download() {
                         Download our app now.
                     </p>
                 </div>
-                <div className="w-full flex justify-center">
-                    <div className="w-[520px] flex phone:flex-row flex-col gap-[17px]">
+                <div className="w-full flex justify-center items-center">
+                    <div className="w-[520px] flex justify-center items-center phone:flex-row flex-col gap-[17px]">
                         <Link href="https://www.apple.com/app-store/">
                             <Image
                                 src="/images/appstore.jpg"

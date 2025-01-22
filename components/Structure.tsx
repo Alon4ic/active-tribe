@@ -4,13 +4,27 @@ import React from 'react';
 export default function Structure() {
     return (
         <>
-            <div className="w-full relative lg:hidden">
+            <div id="structure" className="w-full relative lg:hidden">
                 <Image
-                    src="/images/station-gym-top.jpg"
+                    src="/images/structure-md.jpg"
                     alt="Station"
-                    width={590}
+                    width={1024}
+                    height={655}
+                    className="lg:hidden md:flex phone:hidden hidden lg:rounded-[10px] rounded-[0px] w-full"
+                />
+                <Image
+                    src="/images/structure-phone.jpg"
+                    alt="Station"
+                    width={751}
                     height={630}
-                    className="lg:rounded-[10px] rounded-[0px] w-full md:h-[630px] h-[456px]"
+                    className="lg:hidden md:hidden phone:flex hidden lg:rounded-[10px] rounded-[0px] w-full"
+                />
+                <Image
+                    src="/images/structure.jpg"
+                    alt="Station"
+                    width={393}
+                    height={630}
+                    className="lg:hidden md:hidden phone:hidden flex lg:rounded-[10px] rounded-[0px] w-full"
                 />
                 <Image
                     src="/images/station-gym.svg"
@@ -26,11 +40,11 @@ export default function Structure() {
                     <div className="flex justify-between">
                         <div className="lg:flex hidden relative lg:w-[48.7%] w-full h-[630px]">
                             <Image
-                                src="/images/station.jpg"
+                                src="/images/structure-lg.jpg"
                                 alt="Station"
                                 width={590}
                                 height={630}
-                                className="lg:rounded-[10px] rounded-[0px] w-full h-[630px]"
+                                className="lg:flex hidden lg:rounded-[10px] rounded-[0px] w-full"
                             />
                             <Image
                                 src="/images/station-gym.svg"

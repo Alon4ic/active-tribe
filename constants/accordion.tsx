@@ -3,7 +3,7 @@ const accordionData = [
         id: 'item-1',
         title: 'How do I sign up?',
         content: (
-            <ul>
+            <ul key="sing-list">
                 <li key="sign-up-1" className="pb-2">
                     Download the App: Get the GymStation app from the App Store
                     or Google Play.
@@ -24,7 +24,7 @@ const accordionData = [
         id: 'item-2',
         title: 'How do I book GymStation?',
         content: (
-            <ul>
+            <ul key="book-list">
                 <li key="book-1" className="pb-2">
                     Log In: Open the GymStation app and log in to your account.
                 </li>
@@ -37,7 +37,7 @@ const accordionData = [
                     book it for your desired time slot.
                 </li>
                 <li key="book-4" className="pb-2">
-                    Confirm Booking: You'll receive a confirmation and
+                    Confirm Booking: You&apos;ll receive a confirmation and
                     instructions on how to access the GymStation.
                 </li>
             </ul>
@@ -47,20 +47,20 @@ const accordionData = [
         id: 'item-3',
         title: 'How do I unlock the GymStation?',
         content: [
-            <ul>
+            <ul key="unlock-list">
                 <li key="unlock-1" className="pb-2">
                     Get near the GymStation
                 </li>
                 <li key="unlock-2" className="pb-2">
-                    Open the App: Go to the "My Bookings" section.
+                    Open the App: Go to the &quot;My Bookings&quot; section.
                 </li>
                 <li key="unlock-3" className="pb-2">
                     Select Your Booking: Choose the active booking you want to
                     access.
                 </li>
                 <li key="unlock-4" className="pb-2">
-                    Unlock: Tap the unlock button in the app when you're near
-                    the GymStation.
+                    Unlock: Tap the unlock button in the app when you&apos;re
+                    near the GymStation.
                 </li>
             </ul>,
         ],
@@ -69,19 +69,19 @@ const accordionData = [
         id: 'item-4',
         title: 'Can\u2019t open the GymStation. What can I do?',
         content: [
-            <ul>
+            <ul key="open-list">
                 <li key="open-1" className="pb-2">
-                    Check Your Booking: Ensure your booking is active and you're
-                    at the correct GymStation.
+                    Check Your Booking: Ensure your booking is active and
+                    you&apos;re at the correct GymStation.
                 </li>
                 <li key="open-2" className="pb-2">
                     Restart the App: Close and reopen the app, then try
                     unlocking again.
                 </li>
                 <li key="open-3" className="pb-2">
-                    Contact Support: If issues persist, use the "Help" section
-                    in the app or email us at support@activetribe.com for
-                    assistance.
+                    Contact Support: If issues persist, use the &quot;Help&quot;
+                    section in the app or email us at support@activetribe.com
+                    for assistance.
                 </li>
             </ul>,
         ],
@@ -90,7 +90,7 @@ const accordionData = [
         id: 'item-5',
         title: 'Can\u2019t lock GymStation. What can I do?',
         content: [
-            <ul>
+            <ul key="lock-list">
                 <li key="lock-1" className="pb-2">
                     Ensure Equipment is Returned: Make sure all equipment is
                     properly placed back in the locker.
@@ -99,8 +99,9 @@ const accordionData = [
                     Retry the App: Try locking the GymStation again via the app.
                 </li>
                 <li key="lock-3" className="pb-2">
-                    Contact Support: If you still can't lock it, contact our
-                    support team through the app or at support@activetribe.com.
+                    Contact Support: If you still can&quot;t lock it, contact
+                    our support team through the app or at
+                    support@activetribe.com.
                 </li>
             </ul>,
         ],
@@ -115,7 +116,7 @@ const accordionData = [
         id: 'item-7',
         title: 'Some equipment is missing. What should I do?',
         content: [
-            <ul>
+            <ul key="missing-list">
                 <li key="missing-1" className="pb-2">
                     Report Immediately: Use the app to report any missing
                     equipment as soon as you notice it.
@@ -145,7 +146,7 @@ const accordionData = [
         id: 'item-9',
         title: 'What happens if I go overtime?',
         content: [
-            <ul>
+            <ul key="happens-list">
                 <li key="happens-1" className="pb-2">
                     There are no extra charges if you go overtime, but you will
                     receive penalty points for exceeding your booked time slot.

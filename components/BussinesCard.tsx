@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BussinesCard() {
     return (
@@ -56,8 +57,8 @@ export default function BussinesCard() {
                         asChild
                         className="pt-[10px] pb-[11px] bg-[#88816E] rounded-3xl "
                     >
-                        <a
-                            href="#"
+                        <Link
+                            href="/#contact"
                             className="font-semibold text-[15px] py-[10px] pr-3 text-white"
                         >
                             Check our app
@@ -67,17 +68,38 @@ export default function BussinesCard() {
                                 width={15}
                                 height={10}
                             />
-                        </a>
+                        </Link>
                     </Button>
                 </div>
             </div>
             <div className="w-full phone:mt-[60px] mt-[30px]">
                 <Image
-                    src="/images/Business-Card.jpg"
+                    src="/images/about-lg.jpg"
                     alt="Business Card"
                     width={1215}
                     height={600}
-                    className="flex md:h-[600px] sm:h-[510px] phone:h-[410px] h-[310px]"
+                    className="lg:flex hidden rounded-[10px]"
+                />
+                <Image
+                    src="/images/about-md.jpg"
+                    alt="Business Card"
+                    width={964}
+                    height={600}
+                    className="lg:hidden md:flex hidden rounded-[10px]"
+                />
+                <Image
+                    src="/images/about-phone.jpg"
+                    alt="Business Card"
+                    width={704}
+                    height={510}
+                    className="lg:hidden md:hidden phone:flex hidden rounded-[10px]"
+                />
+                <Image
+                    src="/images/about.jpg"
+                    alt="Business Card"
+                    width={353}
+                    height={510}
+                    className="lg:hidden md:hidden phone:hidden flex rounded-[10px]"
                 />
             </div>
         </section>

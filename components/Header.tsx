@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 import NavbarLinks from './NavbarLinks';
@@ -12,9 +12,9 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="w-full max-w-[1216px] mx-auto px-4 flex items-center justify-between mt-[25px] mb-[25px]">
+        <nav className="w-full max-w-[1216px] mx-auto px-4 flex items-center justify-between mt-[25px] mb-[25px] overflow-hidden">
             {/* Логотип */}
-            <div className="flex-shrink-0 flex-start xl:mr-[6%] mr-[2%]">
+            <div className="flex-shrink-0 flex-start">
                 <Link href="/">
                     <Image
                         src="/images/Logo.svg"
@@ -27,14 +27,14 @@ export default function Header() {
             </div>
 
             {/* Меню */}
-            <div className="hidden lg:flex flex-1 justify-center">
+            <div className="hidden lg:flex justify-between">
                 <NavbarLinks />
             </div>
 
             {/* Кнопка */}
-            <div className="flex items-center justify-end flex-shrink-0 xl:ml-[6%] ml-[2%] lg:max-w-[calc(100%-50px)] max-w-full">
+            <div className="flex items-center justify-end flex-shrink-0 xl:ml-[6%] ml-0 lg:max-w-[calc(100% - 50px)] max-w-full">
                 <div className="hidden sm:flex lg:mr-0 mr-[10px]">
-                    <ButtonNav />
+                    <ButtonNav href="/#contact" text="Join Active Tribe" />
                 </div>
                 <NavbarBurger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
             </div>

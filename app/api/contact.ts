@@ -1,7 +1,5 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY!);
+import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
     const body = await request.json();
@@ -39,12 +37,23 @@ export async function POST(request: Request) {
     }
 
     try {
-        // Отправка письма через Resend
-        await resend.emails.send({
-            from: 'no-reply@yourdomain.com', // Укажите ваш подтвержденный домен
-            to: 'support@yourdomain.com', // Куда отправлять сообщения
-            subject: `Новое сообщение от ${name}`,
-            text: `Имя: ${name}\nEmail: ${email}\nСообщение: ${message}`,
+        // Настройка транспорта Nodemailer
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST, // Например, smtp.gmail.com
+            port: parseInt(process.env.SMTP_PORT || '587', 10), // Обычно 587 для TLS
+            secure: false, // Установите true для порта 465, иначе false
+            auth: {
+                user: process.env.SMTP_USER, // Логин SMTP (например, ваша почта)
+                pass: process.env.SMTP_PASS, // Пароль SMTP или App Password
+            },
+        });
+
+        // Отправка письма
+        await transporter.sendMail({
+            from: `"${name}" <${process.env.SMTP_USER}>`, // Отправитель
+            to: 'support@yourdomain.com', // Кому отправить
+            subject: `New message from ${name}`,
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
         });
 
         return NextResponse.json({

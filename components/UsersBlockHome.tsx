@@ -17,7 +17,7 @@ export default function UsersBlockHome() {
                     style={{ width: '133px', height: '40px' }}
                     className="hidden lg:flex items-center justify-center bg-[#E8E3D1] hover:bg-[#f2f1ee] rounded-3xl text-[#0D0D0D] text-lg uppercase font-gilroy font-bold"
                 >
-                    <Link href="/provid">For Users</Link>
+                    <Link href="/users">For Users</Link>
                 </Button>
                 <div className="w-[169px] h-[60px] p-[8.5px] bg-white mt-5 mb-5 rounded">
                     <Image
@@ -44,7 +44,7 @@ export default function UsersBlockHome() {
                 </p>
                 <Link
                     className="bg-baseText text-white w-[199px] flex justify-center items-center rounded-3xl font-semibold text-[15px] py-[10px] hover:bg-[#45392C] active:shadow-custom transition-colors duration-300"
-                    href="/"
+                    href="/#contact"
                 >
                     Join the community
                     <Image

@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+
 
 export async function getCaptchaToken() {
     return new Promise<string | null>((resolve) => {

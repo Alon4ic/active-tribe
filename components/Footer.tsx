@@ -115,7 +115,7 @@ export default function Footer() {
                         </div>
                         <div className="flex flex-end space-x-4">
                             <Link
-                                href="/terms"
+                                href="/terms-of-service"
                                 className="text-sm font-normal leading-4 text-[#BDBDBD] whitespace-nowrap"
                             >
                                 Terms of Service
