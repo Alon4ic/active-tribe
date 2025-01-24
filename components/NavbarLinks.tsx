@@ -12,7 +12,7 @@ export const navbarLinks = [
     { id: 3, name: 'How it Works', href: '/#works' },
     { id: 4, name: 'Structure', href: '/#structure' },
     { id: 5, name: 'FAQ', href: '/#faq' },
-    { id: 6, name: 'Contact', href: '/#contact' },
+    { id: 6, name: 'Contact', href: '#contact' },
 ];
 
 export default function NavbarLinks({

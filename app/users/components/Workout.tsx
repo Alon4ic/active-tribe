@@ -38,8 +38,8 @@ export default function Workout() {
                     </div>
                 </div>
                 <div className="w-full flex lg:justify-start justify-center lg:mt-[-40px] mt-[40px] ">
-                    <div className='w-[156px]'>
-                        <ButtonNav href="/#contact" text="Check our app" />
+                    <div className="w-[156px]">
+                        <ButtonNav href="#contact" text="Check our app" />
                     </div>
                 </div>
                 <div className="md:flex hidden mt-[90px] mb-[50px] rounded-[10px]">

@@ -33,7 +33,7 @@ export default function TopBlock() {
                         </p>
                         <Link
                             className="bg-baseText text-white w-[199px] lg:flex hidden justify-center items-center rounded-3xl font-semibold text-[15px] py-[14px] px-[18px] lg:mb-auto md:mb-[57px] hover:bg-[#45392C] active:bg-baseText active:shadow-custom transition-colors duration-300"
-                            href="/"
+                            href="#contact"
                         >
                             Find Out More
                             <Image

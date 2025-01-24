@@ -18,7 +18,9 @@ export default function TopBlock() {
                     </div>
                     <h1 className="sm:text-[40px] text-[30px] font-extrabold sm:leading-[55px] leading-[45px] text-baseText uppercase pb-5">
                         Unlock your fitness potential now with{' '}
-                        <span className="md:text-darkGold text-baseText">Gymstation</span>
+                        <span className="md:text-darkGold text-baseText">
+                            Gymstation
+                        </span>
                     </h1>
                     <p className="pb-[10px] text-xl text-baseText font-normal leading-7">
                         Introducing{' '}
@@ -31,7 +33,7 @@ export default function TopBlock() {
                         community!
                     </p>
                     <Link
-                        href="/#contact"
+                        href="#contact"
                         className="bg-baseText text-white w-[199px] flex justify-center items-center rounded-3xl font-semibold text-[15px] py-[14px] px-[18px] hover:bg-[#45392C] active:bg-baseText active:shadow-custom transition-colors duration-300 mt-[39px]"
                     >
                         <span>Join the community</span>

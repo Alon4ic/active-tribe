@@ -34,7 +34,7 @@ export default function Header() {
             {/* Кнопка */}
             <div className="flex items-center justify-end flex-shrink-0 xl:ml-[6%] ml-0 lg:max-w-[calc(100% - 50px)] max-w-full">
                 <div className="hidden sm:flex lg:mr-0 mr-[10px]">
-                    <ButtonNav href="/#contact" text="Join Active Tribe" />
+                    <ButtonNav href="#contact" text="Join Active Tribe" />
                 </div>
                 <NavbarBurger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
             </div>

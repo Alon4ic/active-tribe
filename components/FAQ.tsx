@@ -75,6 +75,9 @@ export default function FAQ() {
                                     {item.title}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-base font-normal leading-7 text-baseText">
+                                    <div className="w-full h-5 bg-transparent text-white">
+                                        Hello
+                                    </div>
                                     {Array.isArray(item.content)
                                         ? item.content.map(
                                               (contentItem, idx) => (
@@ -106,6 +109,9 @@ export default function FAQ() {
                                         {item.title}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-base font-normal leading-7 text-baseText">
+                                        <div className="w-full h-5 bg-transparent text-white">
+                                            Hello
+                                        </div>
                                         {Array.isArray(item.content)
                                             ? item.content.map(
                                                   (contentItem, idx) => (
@@ -136,6 +142,9 @@ export default function FAQ() {
                                         {item.title}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-base font-normal leading-7 text-baseText">
+                                        <div className="w-full h-5 bg-transparent text-white">
+                                            Hello
+                                        </div>
                                         {Array.isArray(item.content)
                                             ? item.content.map(
                                                   (contentItem, idx) => (
