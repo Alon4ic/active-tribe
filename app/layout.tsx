@@ -52,7 +52,7 @@ export default function RootLayout({
                     content="width=device-width, initial-scale=1.0"
                 />
             </head>
-            <body className="font-gilroy max-w-[2500px]">
+            <body className="font-gilroy max-w-[3000px]">
                 <Script
                     strategy="beforeInteractive"
                     src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}&hl=en`}
